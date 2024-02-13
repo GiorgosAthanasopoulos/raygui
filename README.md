@@ -2,6 +2,11 @@
 
 A simple gui framework for raylib.
 
+## Requirements
+
+- gcc
+- raylib
+
 ## Usage
 
 This library is a header only library, so you can just copy the files from the ```src``` directory to your project and include them.
