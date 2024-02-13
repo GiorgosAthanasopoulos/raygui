@@ -1,4 +1,7 @@
 #ifndef CONFIG_HPP
 #define CONFIG_HPP
 
+#ifdef RAYGUI_IMPLEMENTATION
+#endif // RAYGUI_IMPLEMENTATION
+
 #endif // CONFIG_HPP

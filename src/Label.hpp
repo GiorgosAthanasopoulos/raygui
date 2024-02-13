@@ -1,4 +1,7 @@
 #ifndef LABEL_HPP
 #define LABEL_HPP
 
+#ifdef RAYGUI_IMPLEMENTATION
+#endif // RAYGUI_IMPLEMENTATION
+
 #endif // LABEL_HPP

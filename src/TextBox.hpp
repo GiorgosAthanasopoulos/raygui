@@ -1,4 +1,7 @@
 #ifndef TEXTBOX_HPP
 #define TEXTBOX_HPP
 
+#ifdef RAYGUI_IMPLEMENTATION
+#endif // RAYGUI_IMPLEMENTATION
+
 #endif // TEXTBOX_HPP

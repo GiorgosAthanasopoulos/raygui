@@ -1,4 +1,7 @@
 #ifndef BUTTON_HPP
 #define BUTTON_HPP
 
+#ifdef RAYGUI_IMPLEMENTATION
+#endif // RAYGUI_IMPLEMENTATION
+
 #endif // BUTTON_HPP
