@@ -1,0 +1,4 @@
+#ifndef CHECKBOX_HPP
+#define CHECKBOX_HPP
+
+#endif // CHECKBOX_HPP
