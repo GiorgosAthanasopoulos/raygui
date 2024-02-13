@@ -20,4 +20,4 @@ cc nobuild.c -o nobuild
 ```
 
 ## TODO
-- Compile all files to a single raygui.h?
+- Compile all files to a single raygui.hpp?
