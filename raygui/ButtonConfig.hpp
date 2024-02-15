@@ -9,16 +9,8 @@ typedef struct ButtonConfig
 
     Font font;
     int fontSize;
-    int spacing;
+    int fontSpacing;
     Color textColor;
 } ButtonConfig;
-
-const ButtonConfig DefaultButtonConfig = {
-    WHITE,
-    GetFontDefault(),
-    30,
-    0,
-    BLACK,
-};
 
 #endif // BUTTONCONFIG_HPP_

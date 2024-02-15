@@ -10,6 +10,7 @@ Rectangle MaintainRatio(Rectangle constraints, Vector2 oldWinSize, Vector2 newWi
     return {
         (constraints.x / oldWinSize.x) * newWinSize.x,
         (constraints.y / oldWinSize.y) * newWinSize.y,
-        (constraints.width / oldWinSize.x) * newWinSize.x,
-        (constraints.height / oldWinSize.y) * newWinSize.y};
+        constraints.width, // (constraints.width / oldWinSize.x) * newWinSize.x,
+        constraints.height // (constraints.height / oldWinSize.y) * newWinSize.y};
+    };
 }

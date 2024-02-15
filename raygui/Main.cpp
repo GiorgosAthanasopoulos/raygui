@@ -1,24 +1,26 @@
 #include <raylib.h>
 
 #include "Button.hpp"
-#include <iostream>
+#include "Utils.hpp"
 
 int main()
 {
-    int w = 1280, h = 720;
+    Vector2 winSize = { 1280, 720 };
     SetConfigFlags(FLAG_WINDOW_RESIZABLE);
-    InitWindow(w, h, "RayGUI");
+    InitWindow(winSize.x, winSize.y, "RayGUI");
+    // InitAudioDevice
+    // SetTargetFPS
+    // SetExitKey
 
-    Button button(
-        Rectangle{(float)w / 2, (float)h / 2, 150, 75}, "Click me!", []() {}, DefaultButtonConfig);
+    Button button;
 
     while (!WindowShouldClose())
     {
-        Vector2 oldWinSize = {(float)w, (float)h};
         Vector2 newWinSize = {(float)GetRenderWidth(), (float)GetRenderHeight()};
-        if (oldWinSize.x != newWinSize.x || oldWinSize.y != newWinSize.y)
+        if (newWinSize.x != winSize.x || newWinSize.y != winSize.y)
         {
-            button.Resize(oldWinSize, newWinSize);
+            button.Resize(winSize, newWinSize);
+            winSize = newWinSize;
         }
 
         button.Update();
@@ -29,6 +31,7 @@ int main()
         EndDrawing();
     }
 
+    // CloseAudioDevice
     CloseWindow();
     return 0;
 }

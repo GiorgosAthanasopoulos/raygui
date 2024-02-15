@@ -16,6 +16,7 @@ private:
     std::string text;
 
 public:
+    Button();
     Button(Rectangle constraints, std::string text, std::function<void(void)> onClick, ButtonConfig buttonConfig);
     ~Button();
 

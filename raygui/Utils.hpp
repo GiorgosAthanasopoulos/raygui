@@ -2,6 +2,7 @@
 #define UTILS_HPP
 
 #include <raylib.h>
+#include <ostream>
 
 bool MouseHovered(Rectangle constraints);
 
