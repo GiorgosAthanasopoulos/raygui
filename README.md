@@ -9,15 +9,21 @@ A simple gui framework for raylib.
 
 ## Usage
 
-This library is a header only library, so you can just copy the files from the ```src``` directory to your project and include them.
-For more details about the widgets, refer to the individual files.
-
-## Example
-
+- Build the library:
 ```console
 cc nobuild.c -o nobuild
 ./nobuild
 ```
+This will compile the library and put the output (libraygui.a) in build/.
+- Use the library:
+    - Include the header files from the ```src``` directory in your project's include folder.
+    - Copy the ```build/libraygui.a``` from the ```build``` directory to your project's lib folder.
+    - Compile your project with ```g++ -Iinclude -Llib ... -lraygui```.
 
-## TODO
-- Compile all files to a single raygui.hpp?
+## Example
+
+```console
+cc nobuild.c -o nobuild 
+./nobuild example
+```
+This will compile the library, place the example executable in build/, and run it as to show off the library's features.
